@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_nav_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ws.wolfsoft.creative.Nav_drawer"
+    tools:showIn="@layout/app_bar_nav_drawer">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fullscreen"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="#ffff"
+            android:id="@+id/sidebar"
+            android:layout_weight="1">
+           <View
+               android:layout_width="2dp"
+               android:layout_height="match_parent"
+               android:background="#ececec"
+               android:layout_centerInParent="true"
+           />
+            <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ececec"
+                android:layout_alignParentBottom="true"/>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            android:id="@+id/tl"
+            >
+
+            <TableRow>
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tyrerl"
+                    >
+
+                    <ImageView android:layout_width="108dp"
+                        android:layout_height="128dp"
+                        android:src="@drawable/tyre_img"
+                        android:id="@+id/tyre"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                       >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:text="Tyre Damage"
+                        android:layout_centerHorizontal="true"
+                       android:layout_below="@+id/tyre"
+                        android:layout_marginBottom="40dp"
+                        />
+
+</RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/fuelrl"
+                    >
+
+
+                    <ImageView android:layout_width="118dp"
+                        android:layout_height="128dp"
+                        android:src="@drawable/fuel"
+                        android:paddingLeft="35dp"
+                        android:id="@+id/fuel"
+                        android:layout_centerInParent="true"
+
+                        >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:text="Fuel Problems ?"
+                        android:layout_below="@+id/fuel"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+            </TableRow>
+
+
+        </TableLayout>
+
+
+        </RelativeLayout>
+
+        <!-- other views, with a total layout_weight of 2 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:background="#FFFF"
+            android:id="@+id/sidebar2"
+            android:layout_weight="1"
+            >
+
+
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#ececec"
+                android:layout_centerInParent="true"
+                />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ececec"
+                android:layout_alignParentBottom="true"/>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1"
+                android:id="@+id/tl3"
+                >
+
+                <TableRow>
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/batteryrl"
+                        >
+
+                        <ImageView android:layout_width="98dp"
+                            android:layout_height="108dp"
+                            android:src="@drawable/battery"
+                            android:id="@+id/battery"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Battery Problems ?"
+                            android:textSize="17dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/battery"
+                            android:layout_marginBottom="40dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/acci_rl"
+                        >
+
+
+                        <ImageView android:layout_width="128dp"
+                            android:layout_height="108dp"
+                            android:src="@drawable/accident"
+                            android:id="@+id/accident"
+                            android:layout_centerInParent="true"
+
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Accident"
+                            android:textSize="17dp"
+                            android:layout_below="@+id/accident"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="5dp"
+                            />
+
+                    </RelativeLayout>
+                </TableRow>
+
+
+
+
+            </TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:background="#FFFF"
+            android:id="@+id/sidebar3"
+            android:layout_weight="1"
+            >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#ececec"
+                android:layout_centerInParent="true"
+                />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ececec"
+                android:layout_alignParentBottom="true"/>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1"
+                android:id="@+id/tl2"
+                >
+
+                <TableRow>
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/towrl"
+                        >
+
+                        <ImageView android:layout_width="128dp"
+                            android:layout_height="108dp"
+                            android:src="@drawable/towtruck"
+                            android:id="@+id/tow"
+                            android:paddingLeft="25dp"
+                            android:layout_centerHorizontal="true"
+
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Need a tow?"
+                            android:textSize="17dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/tow"
+                            android:layout_marginBottom="40dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/other"
+                        >
+
+
+                        <ImageView android:layout_width="128dp"
+                            android:layout_height="108dp"
+                            android:src="@drawable/damage"
+                            android:id="@+id/otherimg"
+                            android:layout_centerHorizontal="true"
+
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Others"
+                            android:layout_below="@+id/otherimg"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="5dp"
+                            android:textSize="17dp"
+                            />
+
+                    </RelativeLayout>
+                </TableRow>
+
+
+
+
+            </TableLayout>
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1003274331141",
+    "firebase_url": "https://fatafatcare-fc1a9.firebaseio.com",
+    "project_id": "fatafatcare-fc1a9",
+    "storage_bucket": "fatafatcare-fc1a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003274331141:android:fe3466d519291b75",
+        "android_client_info": {
+          "package_name": "ws.wolfsoft.creative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003274331141-hmo4vm0rn32rffg2reu5amdvtb9c53h9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVvB-ISK0V5gzEVbw9lPnfKkgv-FYXRmY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
